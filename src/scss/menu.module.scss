@@ -2,7 +2,8 @@
 
 .menu {
   position: relative;
-  
+  isolation: isolate;
+
   .menuSelect {
     position: sticky;
     top: 0;
@@ -16,6 +17,7 @@
     gap: 1rem;
 
     box-shadow: 0 4px 10px 0px rgba(#000, .7);
+    z-index: 1;
 
     .menuHeading {
       @include Heading($size: 3rem, $weight: 600, $ls: 1px);

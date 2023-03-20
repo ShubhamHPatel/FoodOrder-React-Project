@@ -1,0 +1,23 @@
+$clr-900: #252525;
+$clr-100: #F5EDED;
+$clr-accent: #F05454;
+ 
+@mixin Heading($size: 6rem, $weight: 800, $ls: 3px){
+    font-size: $size;
+    font-weight: $weight;
+    letter-spacing: $ls;
+    line-height: 1;
+    text-shadow: 4px 4px 10px rgba(#000, .9);
+}
+
+@mixin SubHeading($size: 2rem, $weight: 600, $ls: 1px){
+    font-size: $size;
+    font-weight: $weight;
+    letter-spacing: $ls;
+}
+
+@mixin Desc($size: 1.15rem, $weight: 100, $lh: 1.1){
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $lh;
+}
